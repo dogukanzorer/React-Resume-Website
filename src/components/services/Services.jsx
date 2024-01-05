@@ -53,6 +53,10 @@ const Services = () => {
           </li>
           <li>
             
+            <p>•	ToolKit: Visual Studio, Postman, Docker</p>
+          </li>
+          <li>
+            
             <p className='special2'>This project involved active contributions to a Customer Relationship Management (CRM) system, leveraging C# within the .NET ecosystem. The technological stack encompassed C#, SQL, PostgreSQL, Entity Framework, AutoFac, Fluent Validation, and JWT for security. The design architecture was implemented with a focus on layered structures, Aspect-Oriented Programming (AOP), and Inversion of Control (IoC) using AutoFac. Fluent Validation was employed for meticulous data validation, ensuring the integrity of information. Security measures included the implementation of JSON Web Tokens (JWT) for robust authentication. The application's API communication was thoroughly tested using Postman. Database operations were conducted using both SQL and PostgreSQL. Additionally, the project involved the design and implementation of microservices, utilizing C#, ASP.NET, and associated frameworks to enhance modularity and scalability within the system.</p>
           </li>
         </ul>

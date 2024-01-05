@@ -6,23 +6,23 @@ import Experience from "./components/experience/Experience.jsx";
 import Services from "./components/services/Services.jsx";
 import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Portfolio from "./components/portfolio/Portfolio.jsx";
-import Layout from "./Layout.jsx";
+import { Outlet } from "react-router-dom";
 
-function App() {
+
+function Layout() {
   return (
     <>
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout/>}>
+      <Header />
+      <Nav />
+      <About />
+      <Experience />
+      <Services />
+      <Contact />
+      <Footer />
 
-        </Route>
-        <Route path="/diploma" element={<Portfolio/>}></Route>
-      </Routes>
-      </BrowserRouter>
+      <Outlet/>
     </>
-  );
+  )
 }
 
-export default App;
+export default Layout
