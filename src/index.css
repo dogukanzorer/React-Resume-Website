@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Salsa&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -46,6 +46,13 @@ body{
 
 }
 
+.me-special{
+   font-family: "Poppins", sans-serif;
+}
+.surname-special{
+    color: var(--color-primary-purple);
+    text-decoration: none;
+}
 /* General styles*/
 
 .container{

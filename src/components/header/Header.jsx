@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
+import Typical from "react-typical"
 
 
 const Header = () => {
@@ -10,8 +11,13 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h1>Jon Dogukan Zorer</h1>
-        <h5 className='text-light'>Full Stack Developer</h5>
+      <h1 className="me-special">Jon Dogukan <a className='surname-special'>Zorer</a></h1>
+      <div>
+        <h5 className='text-light '>I'm <Typical steps={["a Frontend Developer", 1500, "a Backend Developer", 1500,"a Full Stack Developer",1500]} loop={Infinity} wrapper="span" />
+      </h5>
+      </div>
+
+        
         <CTA/>
         <HeaderSocials/>
         <div className="me">
