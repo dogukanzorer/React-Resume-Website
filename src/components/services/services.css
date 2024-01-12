@@ -9,12 +9,58 @@
     border:1px solid var(--color-primary-purple);
     height: fit-content;
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
-.service:hover{
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Bulanıklık rengi ve opaklığı */
+    filter: blur(5px); /* Bulanıklık miktarı */
+    z-index: 1;
+    opacity: 0; /* Başlangıçta bulanıklık efektini gizle */
+    transition: opacity 0.1s; /* Geçiş süresi */
+  }
+.service:hover::before{
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    opacity: 1;
 }
+.service a {
+    position: relative;
+    z-index: 2;
+  }
+  .fafa{
+    font-size: 70px;
+  }
+  
+  /* İçerik alanı stilini düzenleme */
+  .content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .service:hover .content {
+    opacity: 1; /* Hover olduğunda içerik alanını göster */
+  }
+
+  
+
 
 .service__head {
     background: var(--color-primary-purple2);
@@ -51,7 +97,7 @@
 
 .special2{
 
-    font-size: 0.6rem;
+    font-size: 10px;
 }
 .special3{
     font-size: 0.8rem;
