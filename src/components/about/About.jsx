@@ -40,8 +40,8 @@ const About = () => {
           </article>
         </div>
         <br/>
-        <p style={{fontSize:"16px"}}>
-            Greetings! I'm Jon Dogukan Zorer,<br/>
+        <p className='about-me' style={{fontSize:"16px"}}>
+            <br/>Greetings! I'm Jon Dogukan Zorer,<br/>
             I was born in 1998 in New York, USA, and I am a software engineer. I completed my Bachelor's degree in Software Engineering at Uskudar University in September 2022. 
             Throughout my education, I focused on educating myself in web-based and other application development projects.
             I have a high level of social skills, am compatible with team collaborations, and possess skills in planning and time management. 

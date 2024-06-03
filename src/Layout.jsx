@@ -19,7 +19,6 @@ function Layout() {
       <Services />
       <Contact />
       <Footer />
-
       <Outlet/>
     </>
   )

@@ -10,7 +10,7 @@ const Footer = () => {
        <a href="#" className='footer__logo'>DOGUKAN ZORER</a>
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
-        <li><a href="#about"></a>About</li>
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#services">Project</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -25,7 +25,7 @@ const Footer = () => {
 
 
        <div className="footer__copyright">
-        <small>&copy; DOGUKAN ZORER Tutorials. All rights reserved.</small>
+        <small>&copy; DOGUKAN ZORER All rights reserved for this website.</small>
        </div>
 
 
